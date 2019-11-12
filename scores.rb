@@ -8,8 +8,19 @@ scores = [83, 71, 92, 64, 98, 87, 75, 69]
 # puts scores.any? { |score| score < 70 }
 # puts scores.detect { |score| score < 70 }
 # puts "\n"
-scores.select! { |score| score > 70 }
-p scores
-puts "\n"
-scores.reject! { |score| score.even? }
-p scores
+
+# scores.select! { |score| score > 70 }
+# p scores
+# puts "\n"
+# scores.reject! { |score| score.even? }
+# p scores
+
+doubles = scores.map { |score| score * 2 }
+p doubles
+
+get_ice_cream = scores.reduce(:+) >= 600
+puts get_ice_cream
+
+evens, odds = scores.partition { |score| score.even? }
+p evens
+p odds
