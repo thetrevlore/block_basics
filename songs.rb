@@ -90,5 +90,5 @@ playlist.add_song(song3)
 # playlist.each_by_artist("Hank") { |song| song.play }
 # playlist.each_by_artist("Waylon") { |song| song.play }
 
-total_duration = playlist.my_reduce(0) { |sum, song| sum + song.duration }
-p total_duration
+# total_duration = playlist.my_reduce(0) { |sum, song| sum + song.duration }
+# p total_duration
